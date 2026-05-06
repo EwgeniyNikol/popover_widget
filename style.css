@@ -1,0 +1,74 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f8f9fa;
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.popover {
+  position: absolute;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  max-width: 280px;
+}
+
+.popover-header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 14px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px 5px 0 0;
+}
+
+.popover-body {
+  padding: 10px 14px;
+  color: #212529;
+  font-size: 14px;
+}
+
+.popover-arrow {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgba(0, 0, 0, 0.2);
+}
+
+.popover-arrow::after {
+  content: '';
+  position: absolute;
+  bottom: 1px;
+  left: -9px;
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 9px solid white;
+}
+
