@@ -3,8 +3,7 @@ import Popover from './Popover';
 
 const trigger = document.getElementById('popover-trigger');
 
-new Popover(
-  trigger,
-  'Popover title',
-  'А здесь потрясающий контент. Он очень увлекает. Правда?'
-);
+const title = trigger.dataset.title;
+const content = trigger.dataset.content;
+
+new Popover(trigger, title, content);
